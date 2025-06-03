@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; }
+.critico { background-color: #f8d7da; }
+.urgente { background-color: #fff3cd; }
+.moderado { background-color: #fff9c4; }
+.leve { background-color: #d4edda; }

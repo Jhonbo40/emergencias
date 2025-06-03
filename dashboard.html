@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Pacientes</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-body-secondary">
+  <div class="container mt-4">
+    <h2 class="text-center mb-4">Registro de Pacientes en Emergencias</h2>
+    <form id="formPaciente" class="border p-4 bg-white rounded">
+      <div class="row mb-3">
+        <div class="col"><input type="text" class="form-control" placeholder="Nombre completo" id="nombre" required></div>
+        <div class="col"><input type="number" class="form-control" placeholder="Edad" id="edad" required></div>
+        <div class="col">
+          <select id="genero" class="form-select" required>
+            <option value="">Género</option>
+            <option>Hombre</option>
+            <option>Mujer</option>
+          </select>
+        </div>
+      </div>
+      <div class="mb-3"><input type="text" class="form-control" placeholder="CI o Pasaporte" id="documento" required></div>
+      <div class="mb-3"><input type="text" class="form-control" placeholder="Síntomas" id="sintomas" required></div>
+      <div class="mb-3">
+        <select id="gravedad" class="form-select" required>
+          <option value="">Nivel de gravedad</option>
+          <option value="critico">Crítico</option>
+          <option value="urgente">Urgente</option>
+          <option value="moderado">Moderado</option>
+          <option value="leve">Leve</option>
+        </select>
+      </div>
+      <div class="mb-3"><input type="text" class="form-control" placeholder="Tratamiento" id="tratamiento" required></div>
+      <div class="mb-3"><input type="text" class="form-control" placeholder="Medicamentos" id="medicamentos" required></div>
+      <div class="mb-3">
+        <select id="examenes" class="form-select">
+          <option>Laboratorio</option>
+          <option>Rayos X</option>
+          <option>Tomografía</option>
+          <option>Ultrasonido</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Registrar Paciente</button>
+    </form>
+
+    <h4 class="mt-5">Pacientes Registrados</h4>
+    <div id="contadores" class="my-3"></div>
+    <table class="table table-bordered" id="tablaPacientes">
+      <thead><tr><th>Nombre</th><th>Edad</th><th>CI</th><th>Gravedad</th><th>Eliminar</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+<footer style="background:#212529; color:white; padding:20px; text-align:center;">
+  &copy; 2025 Hospital de Emergencias - Todos los derechos reservados
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

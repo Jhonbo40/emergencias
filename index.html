@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Emergencias - Login</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Sistema de Registro de Emergencias</h2>
+    <ul class="nav nav-tabs" id="tabMenu">
+      <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#loginTab">Iniciar Sesión</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#registerTab">Crear Cuenta</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#recoverTab">Recuperar Contraseña</a></li>
+    </ul>
+    <div class="tab-content p-4 border border-top-0 bg-white">
+      <div class="tab-pane fade show active" id="loginTab">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label>Correo</label>
+            <input type="email" class="form-control" id="loginCorreo" required />
+          </div>
+          <div class="mb-3">
+            <label>Contraseña</label>
+            <input type="password" class="form-control" id="loginClave" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </form>
+      </div>
+      <div class="tab-pane fade" id="registerTab">
+        <form id="registerForm">
+          <div class="mb-3"><label>Correo</label><input type="email" class="form-control" id="regCorreo" required /></div>
+          <div class="mb-3"><label>Contraseña</label><input type="password" class="form-control" id="regClave" required /></div>
+          <button type="submit" class="btn btn-success">Registrar</button>
+        </form>
+      </div>
+      <div class="tab-pane fade" id="recoverTab">
+        <form id="recoverForm">
+          <div class="mb-3"><label>Correo registrado</label><input type="email" class="form-control" id="recCorreo" required /></div>
+          <div class="mb-3"><label>Nueva contraseña</label><input type="password" class="form-control" id="recClave" required /></div>
+          <button type="submit" class="btn btn-warning">Recuperar Contraseña</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<footer style="background:#212529; color:white; padding:20px; text-align:center;">
+  &copy; 2025 Hospital de Emergencias - Todos los derechos reservados
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
